@@ -1,0 +1,14 @@
+{
+    "trainer": [
+        {
+            "id": "001",
+            "nombre": "ssa",
+            "email_personal": "sasasa",
+            "email_corporativo": "w",
+            "telefono_movil": "w",
+            "telefono_residencia": "ww",
+            "telefono_empresa": "w",
+            "telefono_movilEmpresarial": "w"
+        }
+    ]
+}
