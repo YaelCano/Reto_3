@@ -11,10 +11,10 @@ if __name__ == '__main__':
         os.system("clear")
         
         print('+','-'*55,'+')
-        print("|{:^20}{}{:^23}|".format(' ','MENU---PRINCIPAL',' '))
+        print("|{:^20}{}{:^21}|".format(' ','MENU---PRINCIPAL',' '))
         print('+','-'*55,'+')
         print('+','-'*55,'+')
-        print("|{:^20}{}{:^28}|".format(' ','CAMPUSLANDS',' '))
+        print("|{:^20}{}{:^26}|".format(' ','CAMPUSLANDS',' '))
         print('+','-'*55,'+')
         print("1. Registro de trainer: ")
         print("2. Registro de equipos:") 
