@@ -1,5 +1,7 @@
 import os
 import trainer
+import equipos
+import incidentes
 
 
 if __name__ == '__main__':
@@ -23,9 +25,11 @@ if __name__ == '__main__':
             trainer.LoadInfoTrainers()
             trainer.mainMenu()
         elif (opcion == 2):
-            pass
+            equipos.LoadInfoEquipos
+            equipos.RegEquipos()
         elif (opcion == 3):
-            pass
+            incidentes.LoadInfoIncidentes
+            incidentes.RegEquipos()
         elif (opcion == 4):
             isActive = False
             print("Adios de programa--------------------------------")
