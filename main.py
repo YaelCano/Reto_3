@@ -29,7 +29,7 @@ if __name__ == '__main__':
             equipos.RegEquipos()
         elif (opcion == 3):
             incidentes.LoadInfoIncidentes
-            incidentes.RegEquipos()
+            incidentes.mainMenu_1()
         elif (opcion == 4):
             isActive = False
             print("Adios de programa--------------------------------")

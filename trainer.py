@@ -12,7 +12,10 @@ def LoadInfoTrainers():
 def mainMenu():
     isCliRun = True
     os.system("clear")
-    print("\n----menu---de---Registro---trainers----")
+    print('+','-'*55,'+')
+    print("|{:^20}{}{:^21}|".format(' ','REGISTRO--TRAINERS',' '))
+    print('+','-'*55,'+')
+    print('+','-'*55,'+')
     print("1. Registro de trainers: ")
     print("2. Busqueda de trainers: ") 
     print("3. Editor de trainers: ")
@@ -46,7 +49,7 @@ def mainMenu():
 
     if (opcion == 2 ):
         print('+','-'*55,'+')
-        print("|{:^16}{}{:^15}|".format(' ','BUSCADOR DE TRAINERS',' '))
+        print("|{:^16}{}{:^20}|".format(' ','BUSCADOR DE TRAINERS',' '))
         print('+','-'*55,'+')
         codBusq = input("Ingrese el codigo del trainer a buscar: ")
         for i,item in enumerate(dictTrainers["trainer"]):
@@ -81,14 +84,13 @@ def mainMenu():
         print('+','-'*49,'+')
         print("|{:^16}{}{:^15}|".format(' ','ELIMINACIÓN DEL TRAINER',' '))
         print('+','-'*49,'+')
-        codBusq = input("Ingrese el codigo del trainer a buscar: ")
+        codElim = input("Ingrese el codigo del trainer a buscar: ")
         for i,item in enumerate(dictTrainers["trainer"]):
-            if codBusq in item["id"]:
-                itemDel = dictTrainers["trainer"].pop(i)
+            if codElim == item["id"]:
                 dictTrainers["trainer"].pop(i)
                 core.editInfo("trainers.json",dictTrainers)
                 input("Presione enter para continuar....")
-                #core.crearInfo("trainers.json",itemdel)
+
     elif (opcion == 5):
         isCliRun = False
     if (isCliRun):
