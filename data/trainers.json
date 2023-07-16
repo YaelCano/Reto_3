@@ -9,6 +9,16 @@
             "telefono_residencia": "ww",
             "telefono_empresa": "w",
             "telefono_movilEmpresarial": "w"
+        },
+        {
+            "id": "002",
+            "nombre": "miguel",
+            "email_personal": "miguel@gmail.com",
+            "email_corporativo": "miguel@gamil.com",
+            "telefono_movil": "1223",
+            "telefono_residencia": "451",
+            "telefono_empresa": "215",
+            "telefono_movilEmpresarial": "1215"
         }
     ]
 }
