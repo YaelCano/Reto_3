@@ -11,10 +11,10 @@ if __name__ == '__main__':
         os.system("clear")
         
         print('+','-'*55,'+')
-        print("|{:^20}{}{:^23}|".format(' ','MENU---PRINCIPAL',' '))
+        print("|{:^20}{}{:^21}|".format(' ','MENU---PRINCIPAL',' '))
         print('+','-'*55,'+')
         print('+','-'*55,'+')
-        print("|{:^20}{}{:^28}|".format(' ','CAMPUSLANDS',' '))
+        print("|{:^20}{}{:^26}|".format(' ','CAMPUSLANDS',' '))
         print('+','-'*55,'+')
         print("1. Registro de trainer: ")
         print("2. Registro de equipos:") 
@@ -30,6 +30,7 @@ if __name__ == '__main__':
         elif (opcion == 3):
             incidentes.LoadInfoIncidencias
             incidentes.RegEquipos()
+
         elif (opcion == 4):
             input("Esta seguro de que quiere cerrar el programa si queire continuar persione enter")
             isActive = False

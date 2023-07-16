@@ -174,3 +174,5 @@ def RegIncidencias():
             input("Presiona enter para continuar .....")
         if opcion == 3:
             reg = False
+
+

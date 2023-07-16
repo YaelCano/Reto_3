@@ -10,12 +10,12 @@ def LoadInfoTrainers():
     else:
         core.crearInfo("trainers.json",dictTrainers)
 def mainMenu():
+    isCliRun = True
     os.system("clear")
     print("\n----menu---de---Registro---trainers----")
-    print("1. Registro de trainers: ")
+    print("1. registro de trainers: ")
     print("2. Busqueda de trainers: ") 
     print("3. Editor de trainers: ")
-    print("4. volver al menu pricipa: ")
     opcion = int(input(":<"))
 
     if (opcion == 1):
@@ -44,7 +44,7 @@ def mainMenu():
 
     if (opcion == 2 ):
         print('+','-'*55,'+')
-        print("|{:^16}{}{:^15}|".format(' ','BUSCADOR DE TRAINERS',' '))
+        print("|{:^16}{}{:^20}|".format(' ','BUSCADOR DE TRAINERS',' '))
         print('+','-'*55,'+')
         codBusq = input("Ingrese el codigo del trainer a buscar: ")
         for i,item in enumerate(dictTrainers["trainer"]):
@@ -53,13 +53,10 @@ def mainMenu():
                 print(f'Nombre del Trainer: {item["nombre"]}')
                 print(f'email personal: {item["email_personal"]}')
                 print(f'email coporativo: {item["email_corporativo"]}')
-                print(f'Telefono corporativo: {item["telefono_movil"]}')
                 print(f'Telefono movil: {item["telefono_movil"]}')
                 print(f'Telefono residencial: {item["telefono_residencia"]}')
                 print(f'Telefono de la empresa: {item["telefono_empresa"]}')
                 print(f'Telefono movil empresarial: {item["telefono_movilEmpresarial"]}')            
             input("presione enter para continuar...")
-    elif (opcion == 3):
-        pass  
-    elif (opcion == 4):
-        pass       
+    if (opcion == 3):
+        pass        
