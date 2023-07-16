@@ -12,9 +12,10 @@ def LoadInfoTrainers():
 def mainMenu():
     os.system("clear")
     print("\n----menu---de---Registro---trainers----")
-    print("1. registro de trainers: ")
+    print("1. Registro de trainers: ")
     print("2. Busqueda de trainers: ") 
     print("3. Editor de trainers: ")
+    print("4. volver al menu pricipa: ")
     opcion = int(input(":<"))
 
     if (opcion == 1):
@@ -58,5 +59,7 @@ def mainMenu():
                 print(f'Telefono de la empresa: {item["telefono_empresa"]}')
                 print(f'Telefono movil empresarial: {item["telefono_movilEmpresarial"]}')            
             input("presione enter para continuar...")
-    if (opcion == 3):
-        pass        
+    elif (opcion == 3):
+        pass  
+    elif (opcion == 4):
+        pass       

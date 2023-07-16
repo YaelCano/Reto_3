@@ -28,9 +28,10 @@ if __name__ == '__main__':
             equipos.LoadInfoEquipos
             equipos.RegEquipos()
         elif (opcion == 3):
-            incidentes.LoadInfoIncidentes
+            incidentes.LoadInfoIncidencias
             incidentes.RegEquipos()
         elif (opcion == 4):
+            input("Esta seguro de que quiere cerrar el programa si queire continuar persione enter")
             isActive = False
             print("Adios de programa--------------------------------")
         else:
